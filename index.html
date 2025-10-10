@@ -81,132 +81,130 @@
 
 
   <main id="main-content">
-    <main id="main-content">
-      <section class="hero">
-        <div class="hero-body">
-          <div class="container is-max-desktop">
-            <div class="columns is-centered">
-              <div class="column has-text-centered">
-                <h1 class="title is-1 publication-title">
-                  <span style="display: flex; align-items: center; justify-content: center;">
-                    <img src="static/images/problem-solving.png" alt="logo" width="60" style="vertical-align: middle; margin-right: 10px;">
-                    R-HORIZON
-                  </span>
-                  How Far Can Your Large Reasoning Model Really Go in Breadth and Depth?</h1>
-                <div class="is-size-5 publication-authors">
-                  <span class="author-block">
-                    <a href="https://github.com/LuLuLuyi" target="_blank">Yi Lu</a>,
-                  </span>
-                  <span class="author-block">
-                    <a href="https://wjn1996.github.io/" target="_blank">Jianing Wang</a><sup>†</sup>,
-                  </span>
-                  <span class="author-block">
-                    Linsen Guo,
-                  </span>
-                  <span class="author-block">
-                    Wei He,
-                  </span>
-                  <span class="author-block">
-                    Hongyin Tang,
-                  </span>
-                  <br>
-                  <span class="author-block">
-                    Tao Gui,
-                  </span>
-                  <span class="author-block">
-                    Xuanjing Huang,
-                  </span>
-                  <span class="author-block">
-                    Xuezhi Cao,
-                  </span>
-                  <span class="author-block">
-                    Wei Wang<sup>†</sup>,
-                  </span>
-                  <span class="author-block">
-                    Xunliang Cai
-                  </span>
-                </div>
-    
-                <div class="is-size-5 publication-authors">
-                  <span class="author-block">
-                    Fudan University
-                    ,
-                    Meituan
-                  </span>
-                  <br>
-                  <span class="author-block">
-                    <small>†Correspondence to: <code>lygwjn@gmail.com</code>, <code>wangwei432@meituan.com</code></small>
-                  </span>
-                  <br>
-                </div>
-    
-                <div class="column has-text-centered">
-                  <div class="publication-links">
-                    <span class="link-block">
-                      <a href="[您的 arXiv PDF 链接，替换 TBD]" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          📃
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-    
-                    <span class="link-block">
-                      <a href="https://huggingface.co/collections/lulululuyi/r-horzion-68e62c04ccaa96434133d321" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          🤗
-                        </span>
-                        <span>Dataset</span>
-                      </a>
-                    </span>
-    
-                    <span class="link-block">
-                      <a href="https://github.com/LuLuLuyi/R-HORIZON" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fab fa-github"></i>
-                        </span>
-                        <span>Code</span>
-                      </a>
-                    </span>
-    
-                    <span class="link-block">
-                      <a href="[您的 arXiv Abstract 链接，替换 TBD]" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="ai ai-arxiv"></i>
-                        </span>
-                        <span>arXiv</span>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      <section id="abstract" class="section hero is-light">
+    <section class="hero">
+      <div class="hero-body">
         <div class="container is-max-desktop">
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <h2 class="title is-3">Abstract</h2>
-              <div class="content has-text-justified">
-                <p>
-                  Recent trends in test-time scaling for reasoning models (e.g., OpenAI o1, DeepSeek-R1) have led to remarkable improvements through long Chain-of-Thought (CoT). However, existing benchmarks mainly focus on immediate, single-horizon tasks, failing to adequately evaluate models’ ability to understand and respond to complex, long-horizon scenarios. To address this incomplete evaluation of Large Reasoning Models (LRMs), we propose R-HORIZON, a method designed to stimulate long-horizon reasoning behaviors in LRMs through query composition. Based on R-HORIZON, we construct a long-horizon reasoning benchmark, comprising complex multi-step reasoning tasks with interdependent problems that span long reasoning horizons. Through comprehensive evaluation of LRMs using the R-HORIZON benchmark, we find that even the most advanced LRMs suffer significant performance degradation. Our analysis reveals that LRMs exhibit limited effective reasoning length and struggle to allocate thinking budget across multiple problems appropriately. Recognizing these limitations, we use R-HORIZON to construct long-horizon reasoning data for reinforcement learning with verified rewards (RLVR). Compared to training with single-horizon data, RLVR with R-HORIZON not only substantially improves performance on the multi-horizon reasoning tasks, but also promotes accuracy on standard reasoning tasks (+7.5 on AIME2024). These results position R-HORIZON as a scalable, controllable, and low-cost paradigm for enhancing and evaluating the long-horizon reasoning capabilities of LRMs.
-                </p>
-                <p>
-                  <img src="static/images/mainfig.png" alt="R-HORIZON Concept Illustration" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
-                </p>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                <span style="display: flex; align-items: center; justify-content: center;">
+                  <img src="static/images/problem-solving.png" alt="logo" width="60" style="vertical-align: middle; margin-right: 10px;">
+                  R-HORIZON
+                </span>
+                How Far Can Your Large Reasoning Model Really Go in Breadth and Depth?</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://github.com/LuLuLuyi" target="_blank">Yi Lu</a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://wjn1996.github.io/" target="_blank">Jianing Wang</a><sup>†</sup>,
+                </span>
+                <span class="author-block">
+                  Linsen Guo,
+                </span>
+                <span class="author-block">
+                  Wei He,
+                </span>
+                <span class="author-block">
+                  Hongyin Tang,
+                </span>
+                <br>
+                <span class="author-block">
+                  Tao Gui,
+                </span>
+                <span class="author-block">
+                  Xuanjing Huang,
+                </span>
+                <span class="author-block">
+                  Xuezhi Cao,
+                </span>
+                <span class="author-block">
+                  Wei Wang<sup>†</sup>,
+                </span>
+                <span class="author-block">
+                  Xunliang Cai
+                </span>
+              </div>
+  
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  Fudan University
+                  ,
+                  Meituan
+                </span>
+                <br>
+                <span class="author-block">
+                  <small>†Correspondence to: <code>lygwjn@gmail.com</code>, <code>wangwei432@meituan.com</code></small>
+                </span>
+                <br>
+              </div>
+  
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2510.08189" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        📃
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+  
+                  <span class="link-block">
+                    <a href="https://huggingface.co/collections/lulululuyi/r-horzion-68e62c04ccaa96434133d321" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        🤗
+                      </span>
+                      <span>Dataset</span>
+                    </a>
+                  </span>
+  
+                  <span class="link-block">
+                    <a href="https://github.com/LuLuLuyi/R-HORIZON" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+  
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2510.08189" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    ---
+      </div>
+    </section>
+  
+    <section id="abstract" class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Recent trends in test-time scaling for reasoning models (e.g., OpenAI o1, DeepSeek-R1) have led to remarkable improvements through long Chain-of-Thought (CoT). However, existing benchmarks mainly focus on immediate, single-horizon tasks, failing to adequately evaluate models' ability to understand and respond to complex, long-horizon scenarios. To address this incomplete evaluation of Large Reasoning Models (LRMs), we propose R-HORIZON, a method designed to stimulate long-horizon reasoning behaviors in LRMs through query composition. Based on R-HORIZON, we construct a long-horizon reasoning benchmark, comprising complex multi-step reasoning tasks with interdependent problems that span long reasoning horizons. Through comprehensive evaluation of LRMs using the R-HORIZON benchmark, we find that even the most advanced LRMs suffer significant performance degradation. Our analysis reveals that LRMs exhibit limited effective reasoning length and struggle to allocate thinking budget across multiple problems appropriately. Recognizing these limitations, we use R-HORIZON to construct long-horizon reasoning data for reinforcement learning with verified rewards (RLVR). Compared to training with single-horizon data, RLVR with R-HORIZON not only substantially improves performance on the multi-horizon reasoning tasks, but also promotes accuracy on standard reasoning tasks (+7.5 on AIME2024). These results position R-HORIZON as a scalable, controllable, and low-cost paradigm for enhancing and evaluating the long-horizon reasoning capabilities of LRMs.
+              </p>
+              <p>
+                <img src="static/images/mainfig.png" alt="R-HORIZON Concept Illustration" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="overview" class="section hero is-small">
       <div class="container is-max-desktop">
@@ -235,8 +233,6 @@
       </div>
     </section>
 
-    ---
-
     <section id="evaluation" class="section hero is-small is-light">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
@@ -259,8 +255,6 @@
         </div>
       </div>
     </section>
-
-    ---
 
     <section id="training" class="section hero is-small">
       <div class="container is-max-desktop">
@@ -382,10 +376,8 @@
         </div>
       </div>
     </section>
-
-    ---
     
-    <section id="key-findings" class="section hero is-small">
+    <section id="key-findings" class="section hero is-small is-light">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-full">
@@ -444,8 +436,6 @@
       </div>
     </section>
 
-    ---
-
     <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
         <div class="bibtex-header">
@@ -455,15 +445,19 @@
             <span class="copy-text">Copy</span>
           </button>
         </div>
-        <pre id="bibtex-code"><code>@article{lu2025rhorizon,
-  title={R-HORIZON: How Far Can Your Large Reasoning Model Really Go in Breadth and Depth?},
-  author={Lu, Yi and Wang, Jianing and Guo, Linsen and He, Wei and Tang, Hongyin and Gui, Tao and Huang, Xuanjing and Cao, Xuezhi and Wang, Wei and Cai, Xunliang},
-  journal={arXiv preprint arXiv:[请替换为您的 arXiv ID]},
-  year={2025}
+        <pre id="bibtex-code"><code>@misc{lu2025rhorizonfarlargereasoning,
+  title={R-Horizon: How Far Can Your Large Reasoning Model Really Go in Breadth and Depth?}, 
+  author={Yi Lu and Jianing Wang and Linsen Guo and Wei He and Hongyin Tang and Tao Gui and Xuanjing Huang and Xuezhi Cao and Wei Wang and Xunliang Cai},
+  year={2025},
+  eprint={2510.08189},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2510.08189}
 }
 </code></pre>
       </div>
     </section>
+
     <footer class="footer">
       <div class="container">
         <div class="columns is-centered">
@@ -482,7 +476,7 @@
       </div>
     </footer>
 
-    </main>
+  </main>
 </body>
 
 </html>
